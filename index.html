@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Nanye's Pet Gallery</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="container-header" onmouseout="non_glassmorphism()">
+        <div class="container-icon">
+          <div class="logo-l">
+            <img id="logo-large" src="icons/PetGallery-Logo-2x.png" />
+          </div>
+          <div class="logo-s">
+            <img src="icons/PetGallery-Logo-Mobile-2x.png" />
+          </div>
+        </div>
+      </header>
+
+      <div class="dropdown" onmouseout="non_glassmorphism()">
+        <div class="search-box" onmouseover="glassmorphism()">
+          <img src="./icons/camera-retro-solid.svg" class="icon-camera" />
+          <span id="filter-text">Filter</span>
+          <button class="dropbtn">
+            <img src="./icons/caret-down-solid.svg" class="icon-down" />
+          </button>
+        </div>
+        <div class="dropdown-content" onmouseover="glassmorphism()">
+          <div class="dropdown-content-child">
+            <div class="dropdown-content-text"></div>
+            <div class="dropdown-content-text" onclick="waterfall_cats()">
+              <img src="./icons/cat-solid.svg" />
+              <span>Cats</span>
+            </div>
+            <div class="dropdown-content-text" onclick="waterfall_dogs()">
+              <img src="./icons/dog-solid.svg" />
+              <span>Dogs</span>
+            </div>
+            <div class="dropdown-content-text" onclick="waterfall_birds()">
+              <img src="./icons/crow-solid.svg" />
+              <span>Birds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--gallery section-->
+      <section
+        class="section"
+        id="section-waterfall"
+        onmouseout="non_glassmorphism()"
+      >
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-1.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-1.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-1.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-2.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-2.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-2.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-3.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-3.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-3.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-4.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-4.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-4.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-5.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-5.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-5.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-6.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-6.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-6.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-7.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-7.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-7.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-8.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-8.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-8.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-9.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-9.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-9.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-10.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-10.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-10.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-11.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-11.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-11.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-12.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-12.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-12.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-13.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-13.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-13.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-14.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-14.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-14.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-15.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-15.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-15.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-16.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-16.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-16.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-17.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-17.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-17.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-18.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-18.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-18.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-19.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-19.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Cats">
+          <div class="pic">
+            <img src="images/Cats/Cats-19.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Cats</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="box waterfall-box" id="Dogs">
+          <div class="pic">
+            <img src="images/Dogs/Dogs-20.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Dogs</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+        <div class="box waterfall-box" id="Birds">
+          <div class="pic">
+            <img src="images/Birds/Bird-20.jpeg" />
+            <div class="tag">
+              <a class="tag-element">Birds</a>
+              <a class="tag-element">Pet</a>
+              <a class="tag-element">Pet</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
